@@ -6,14 +6,6 @@ X = 'X'
 O = '0'
 
 
-class GameState:
-    def __init__(self, turn: str):
-        self._turn = turn
-
-    def get_turn(self) -> str:
-        return self._turn
-
-
 board: dict[int: str] = {1: OPEN, 2: OPEN, 3: OPEN,
                          4: OPEN, 5: OPEN, 6: OPEN,
                          7: OPEN, 8: OPEN, 9: OPEN}
@@ -92,5 +84,4 @@ def main(_board: dict[int: str], turn: str):
 if __name__ == '__main__':
     turns = [X, O]
     rnd_turn = random.choice(turns)
-    GameState = GameState(rnd_turn)
-    main(board, GameState.get_turn())
+    main(board, rnd_turn)
