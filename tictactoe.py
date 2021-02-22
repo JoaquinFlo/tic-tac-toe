@@ -78,6 +78,7 @@ def play_turn(_board: dict[int: str], turn: str):
 
 def main(_board: dict[int: str], turn: str):
     print_board(_board)
+    print("Welcome! Each space on the board is represented by a number. The numbers are in ascending order and continues at the start of each row.")
     play_turn(_board, turn)
 
 
