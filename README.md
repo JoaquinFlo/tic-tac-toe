@@ -5,7 +5,7 @@
 ```sh
 git clone https://github.com/JoaquinFlo/tic-tac-toe.git
 ```
-**Navigate to the repository :pin:**
+**Navigate to the repository :pushpin:**
 ```sh
 cd tictactoe/
 ```
